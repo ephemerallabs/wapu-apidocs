@@ -80,7 +80,9 @@ There are two important caveats to keep in mind when dealing with nested resourc
 
 2. There is currently a limitation that nested resources can only be created a single level deep. The practical limitations of this are that **Events** must be created separately from **Popups**. The **Event** must be created first, and then it's *resource_uri* assigned in the *events* list on the **Popup**. Because **FixedDate**, **FixedOpenClose**, and **FloatingDate** entities are not created as true objects with a *resource_uri*, they do not follow this limitation.
 
-**Image Uploading**
+===============
+Image Uploading
+===============
 
 **Images** are not directly uploaded through the API. Instead, they should be uploaded to a server where they can be accessed publically via web URL, such as S3. The format should be either GIF, JPEG, or PNG, and should not exceed 1280x1280.
 
