@@ -6,6 +6,7 @@ Popup
     Retrieve one or a list of Popups
 
     :arg integer id: A Popup ID. May be omitted to load all Popups available
+    :optparam datetime updated_at__gte: Load only Popups that were updated after the given datetime. Must be sent in ISO8601 format.
     :optparam boolean mine: Load only the current user's Popups. Must be a logged in request
     :optparam boolean with_deleted: Load Popups which have been marked deleted. Must be a logged in request. May only be set when **mine** is set to *True*
     :optparam boolean with_drafts: Load Popups which are marked as drafts. Must be a logged in request. May only be set when **mine** is set to *True*
